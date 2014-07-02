@@ -12,7 +12,10 @@ import com.jme3.scene.shape.Box;
  * @author normenhansen
  */
 public class Main extends SimpleApplication {
-
+    
+    //2D-Cam_Zoom
+    private float frustumSize = 1;
+    
     public static void main(String[] args) {
         Main app = new Main();
         app.start();
@@ -28,15 +31,20 @@ public class Main extends SimpleApplication {
         geom.setMaterial(mat);
 
         rootNode.attachChild(geom);
+        
+        //2D-Cam
+        cam.setParallelProjection(true);
+        float aspect = (float) cam.getWidth() / cam.getHeight();
+        cam.setFrustum(-1000, 1000, -aspect * frustumSize, aspect * frustumSize, frustumSize, -frustumSize);
     }
 
     @Override
     public void simpleUpdate(float tpf) {
-        //TODO: add update code
+        
     }
 
     @Override
     public void simpleRender(RenderManager rm) {
-        //TODO: add render code
+        
     }
 }
