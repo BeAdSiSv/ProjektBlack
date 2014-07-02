@@ -14,7 +14,6 @@ Steuerung: PC (evtl. Handy, etc.)
 
 
 Team:	Adri  Tile_Sets, Texturen einlesen
-	    Bene  Sound
+	Bene  Sound
     	Simon GUI
     	Sven  Map-Load
-
