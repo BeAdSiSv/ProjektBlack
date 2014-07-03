@@ -1,7 +1,7 @@
 Die Welt besteht aus einem Graph an Maps.
 Die Verbindungen zu anderen Maps bestehen aus speziellen tiles, welche die Verbindungsinformationen beinhalten.
 
-Jede Map beinhaltet ein Layer für die Höhe(oder "Begänglichkeit") eines Feldes als Integer.
+Jede Map beinhaltet ein Layer für die Höhe(oder "Begänglichkeit") eines Feldes als Integer. 0=h0 + begänglich
 Und Mehrere Layer für die verschiedenen Tile-Ebenen.
 
 Tiles werden über eine HashMap (Integer, URI) in der jeweiligen Map Serialisiert und Geladen.
@@ -22,7 +22,5 @@ in Tiledatei wird gespeichert:
     URI zur Textur
     Textur farbe(aus großer distanz) für ingame Karte
     Textur Gruppe für Sortierungen (z.B Baum, Weg, etc.)
-
-
-Zusatz Gedanken: 
-    Größere Dinge z.B. Bäume komplett spriten und als entity einfügen
+    
+Größere objekte werden auf mehrere Tiles aufgeteilt.
