@@ -17,19 +17,19 @@ public class Main extends SimpleApplication {
     private float frustumSize = 1;
     
     public static void main(String[] args) {
-        Main app = new Main();
-        app.start();
+//        Main app = new Main();
+//        app.start();
     }
-
+    
     @Override
     public void simpleInitApp() {
         Box b = new Box(1, 1, 1);
         Geometry geom = new Geometry("Box", b);
-
+        
         Material mat = new Material(assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
         mat.setColor("Color", ColorRGBA.Blue);
         geom.setMaterial(mat);
-
+        
         rootNode.attachChild(geom);
         
         //2D-Cam
@@ -37,12 +37,12 @@ public class Main extends SimpleApplication {
         float aspect = (float) cam.getWidth() / cam.getHeight();
         cam.setFrustum(-1000, 1000, -aspect * frustumSize, aspect * frustumSize, frustumSize, -frustumSize);
     }
-
+    
     @Override
     public void simpleUpdate(float tpf) {
         
     }
-
+    
     @Override
     public void simpleRender(RenderManager rm) {
         
