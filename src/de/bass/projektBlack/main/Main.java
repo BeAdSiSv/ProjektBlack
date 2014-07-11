@@ -6,6 +6,11 @@ import com.jme3.math.ColorRGBA;
 import com.jme3.renderer.RenderManager;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.shape.Box;
+import de.bass.projektBlack.stuff.WorldLoader;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 
 /**
  * test
@@ -16,13 +21,17 @@ public class Main extends SimpleApplication {
     //2D-Cam_Zoom
     private float frustumSize = 1;
     
-    public static void main(String[] args) {
-//        Main app = new Main();
-//        app.start();
+    public static void main(String[] args) throws IOException {
+        Main app = new Main();
+        app.start();
     }
     
     @Override
     public void simpleInitApp() {
+        assetManager.registerLoader(WorldLoader.class, "map");
+        
+        assetManager.loadAsset("maps/empty.map");
+        
         Box b = new Box(1, 1, 1);
         Geometry geom = new Geometry("Box", b);
         
