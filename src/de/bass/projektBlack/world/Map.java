@@ -39,8 +39,8 @@ public class Map extends Node{
         for(int x = 0; x < groesseX; x++){
             for(int y = 0; y < groesseY; y++){
                 Tile t = map[x][y];
-                t.setLocalTranslation(x, y, 0.0f);
                 attachChild(t);
+                t.setLocalTranslation(1 + x, 1 + y, 0.0f);
             }
         }
     }
