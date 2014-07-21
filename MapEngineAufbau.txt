@@ -1,0 +1,26 @@
+Die Welt besteht aus einem Graph an Maps.
+Die Verbindungen zu anderen Maps bestehen aus speziellen tiles, welche die Verbindungsinformationen beinhalten.
+
+Jede Map beinhaltet ein Layer für die Höhe(oder "Begänglichkeit") eines Feldes als Integer. 0=h0 + begänglich
+Und Mehrere Layer für die verschiedenen Tile-Ebenen.
+
+Tiles werden über eine HashMap (Integer, URI) in der jeweiligen Map Serialisiert und Geladen.
+Ein Tile ist immer eine text datei welche den pfad zur jeweiligen textur enthält, sowie informationen wie animation oder transparenz, etc.
+
+in Mapdatei wird gespeichert:
+    Größe der Karte
+    Anzahl Layer(gibt es ein Maximum?)
+    genutzte Tiles werden durchnummeriert
+    Layer 0 für Skripte
+    Layer 1 für Zugänglichkeit
+    Jedes Layer ist ein 2D-Array
+
+in Tiledatei wird gespeichert:
+    [Alpha (boolean)]
+    Animation (boolean)
+        anzahl anim. Schritte
+    URI zur Textur
+    Textur farbe(aus großer distanz) für ingame Karte
+    Textur Gruppe für Sortierungen (z.B Baum, Weg, etc.)
+    
+Größere objekte werden auf mehrere Tiles aufgeteilt.
