@@ -22,6 +22,7 @@ public class Main extends SimpleApplication {
     public void simpleInitApp() {
         World w = new World();
         stateManager.attach(w);
+        
         //2D-Cam
         cam.setParallelProjection(true);
         float aspect = (float) cam.getWidth() / cam.getHeight();
