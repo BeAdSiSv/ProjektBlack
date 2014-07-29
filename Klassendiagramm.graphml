@@ -16,78 +16,353 @@
     <data key="d0"/>
     <node id="n0">
       <data key="d4"/>
+      <data key="d5"/>
       <data key="d6">
         <y:UMLClassNode>
-          <y:Geometry height="150.0" width="144.0" x="120.0" y="293.0"/>
+          <y:Geometry height="199.0" width="241.0" x="424.0" y="0.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.92626953125" modelName="custom" textColor="#000000" visible="true" width="30.0" x="57.0" y="3.0">Map<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dotum" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="17.0" modelName="custom" textColor="#000000" visible="true" width="35.2939453125" x="102.85302734375" y="26.701171875">Main<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
               <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="-0.03703090122767855" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
             </y:ModelParameter>
           </y:NodeLabel>
-          <y:UML clipContent="true" constraint="" omitDetails="false" stereotype="" use3DEffect="true">
-            <y:AttributeLabel>int groesse
-int anzLayer
-HashMap&lt;Integer, Tile&gt; tiles
-List&lt;int[][]&gt; layers</y:AttributeLabel>
-            <y:MethodLabel/>
+          <y:UML clipContent="true" constraint="public" omitDetails="false" stereotype="extends SimpleApplication" use3DEffect="true">
+            <y:AttributeLabel>private
+   float frustumSize</y:AttributeLabel>
+            <y:MethodLabel>public
+    static void main(String[])
+    void simpleInitApp()
+    void simpleUpdate(float)
+    void simpleRender(RenderManager)</y:MethodLabel>
           </y:UML>
         </y:UMLClassNode>
       </data>
     </node>
     <node id="n1">
       <data key="d4"/>
+      <data key="d5"/>
       <data key="d6">
         <y:UMLClassNode>
-          <y:Geometry height="150.0" width="144.0" x="336.0" y="293.0"/>
+          <y:Geometry height="142.0" width="348.0" x="245.5" y="801.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.92626953125" modelName="custom" textColor="#000000" visible="true" width="26.39453125" x="58.802734375" y="3.0">Tile<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.92626953125" modelName="custom" textColor="#000000" visible="true" width="47.33544921875" x="150.332275390625" y="3.0">FileUtil<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
               <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="-0.03703090122767855" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
             </y:ModelParameter>
           </y:NodeLabel>
-          <y:UML clipContent="true" constraint="" omitDetails="false" stereotype="" use3DEffect="true">
-            <y:AttributeLabel>URI path
-</y:AttributeLabel>
-            <y:MethodLabel/>
+          <y:UML clipContent="true" constraint="public" omitDetails="false" stereotype="" use3DEffect="true">
+            <y:AttributeLabel>public
+    static final String ASSET_DIRECTORY</y:AttributeLabel>
+            <y:MethodLabel>public
+    static ArrayList&lt;File&gt; searchFiles(String, String, boolean)
+    static ArrayList&lt;File&gt; searchFiles(File, String)</y:MethodLabel>
           </y:UML>
         </y:UMLClassNode>
       </data>
     </node>
     <node id="n2">
       <data key="d4"/>
+      <data key="d5"/>
       <data key="d6">
         <y:UMLClassNode>
-          <y:Geometry height="150.0" width="144.0" x="336.0" y="515.0"/>
+          <y:Geometry height="270.0" width="284.0" x="402.5" y="229.0"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.92626953125" modelName="custom" textColor="#000000" visible="true" width="85.62451171875" x="29.187744140625" y="3.0">AnimatedTile<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.92626953125" modelName="custom" textColor="#000000" visible="true" width="40.82275390625" x="121.588623046875" y="26.701171875">World<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
               <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="-0.03703090122767855" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
             </y:ModelParameter>
           </y:NodeLabel>
-          <y:UML clipContent="true" constraint="" omitDetails="false" stereotype="" use3DEffect="true">
-            <y:AttributeLabel>int anzStepps</y:AttributeLabel>
-            <y:MethodLabel/>
+          <y:UML clipContent="true" constraint="public" omitDetails="false" stereotype="extends AbstractAppstate" use3DEffect="true">
+            <y:AttributeLabel>private
+    final float tileGroesse
+    Main app
+    MapManager mapManager
+    TileManager tileManager
+    HashMap&lt;Koordinate , Tile&gt; world</y:AttributeLabel>
+            <y:MethodLabel>public
+    void initialize(AppStateManager, Application)
+    void update(float)
+private
+    Tile loadTile(String)
+    void loadWorld()</y:MethodLabel>
           </y:UML>
         </y:UMLClassNode>
       </data>
     </node>
-    <edge id="e0" source="n2" target="n1">
+    <node id="n3">
+      <data key="d4"/>
+      <data key="d5"/>
+      <data key="d6">
+        <y:UMLClassNode>
+          <y:Geometry height="165.0" width="215.0" x="437.0" y="585.0"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.92626953125" modelName="custom" textColor="#000000" visible="true" width="79.8544921875" x="67.57275390625" y="3.0">TileManager<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="-0.03703090122767855" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:UML clipContent="true" constraint="package" omitDetails="false" stereotype="" use3DEffect="true">
+            <y:AttributeLabel>private
+    final String ordner
+    final String endung
+    HashMap&lt;String, URI&gt; tileMap</y:AttributeLabel>
+            <y:MethodLabel>public TileManager()
+Tile loadTile(String)</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n4">
+      <data key="d4"/>
+      <data key="d5"/>
+      <data key="d6">
+        <y:UMLClassNode>
+          <y:Geometry height="153.0" width="137.0" x="15.0" y="591.0"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.92626953125" modelName="custom" textColor="#000000" visible="true" width="26.39453125" x="55.302734375" y="26.701171875">Tile<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="-0.03703090122767855" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:UML clipContent="true" constraint="package" omitDetails="false" stereotype="extends Geometry" use3DEffect="true">
+            <y:AttributeLabel>private
+    String texture</y:AttributeLabel>
+            <y:MethodLabel>package
+    String getTexture()</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n5">
+      <data key="d4"/>
+      <data key="d5"/>
+      <data key="d6">
+        <y:UMLClassNode>
+          <y:Geometry height="173.0" width="225.0" x="182.0" y="581.0"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.92626953125" modelName="custom" textColor="#000000" visible="true" width="83.4599609375" x="70.77001953125" y="3.0">MapManager<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="-0.03703090122767855" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:UML clipContent="true" constraint="package" omitDetails="false" stereotype="" use3DEffect="true">
+            <y:AttributeLabel>private
+    final String ordner
+    final String endung
+    HashMap&lt;String, URI&gt; mapMap</y:AttributeLabel>
+            <y:MethodLabel>package
+    MapManager()
+    ArrayList&lt;Map&gt; loadMaps()</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n6">
+      <data key="d4"/>
+      <data key="d5"/>
+      <data key="d6">
+        <y:UMLClassNode>
+          <y:Geometry height="247.0" width="152.0" x="682.0" y="544.0"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.92626953125" modelName="custom" textColor="#000000" visible="true" width="30.0" x="61.0" y="3.0">Map<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="-0.03703090122767855" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:UML clipContent="true" constraint="package" omitDetails="false" stereotype="" use3DEffect="true">
+            <y:AttributeLabel>private 
+    String[][] map;
+    int coordX;
+    int coordY;
+    int groesseX;
+    int groesseY;</y:AttributeLabel>
+            <y:MethodLabel>package
+    int getCoordX()
+    int getCoordY()
+    int getGroesseX()
+    int getGroesseY()
+    String[][] getMapArray()</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n7">
+      <data key="d4"/>
+      <data key="d5"/>
+      <data key="d6">
+        <y:UMLClassNode>
+          <y:Geometry height="185.66666666666663" width="152.0" x="864.0" y="574.6666666666667"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.92626953125" modelName="custom" textColor="#000000" visible="true" width="72.61181640625" x="39.694091796875" y="3.0">Koordinate<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="-0.03703090122767855" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:UML clipContent="true" constraint="public" omitDetails="false" stereotype="" use3DEffect="true">
+            <y:AttributeLabel>private
+    int x
+    int y</y:AttributeLabel>
+            <y:MethodLabel>public
+    int getX()
+    int getY()
+    boolean equals(Object)
+    int hashCode()</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <edge id="e0" source="n2" target="n0">
       <data key="d8"/>
+      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
+          <y:Path sx="-71.0" sy="-135.0" tx="-60.25" ty="99.5">
+            <y:Point x="473.5" y="214.0"/>
+            <y:Point x="484.25" y="214.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="plain"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e1" source="n2" target="n4">
+      <data key="d8"/>
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="-113.60000000000002" sy="135.0" tx="0.0" ty="-76.5">
+            <y:Point x="430.9" y="514.0"/>
+            <y:Point x="83.5" y="514.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="plain"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e2" source="n2" target="n5">
+      <data key="d8"/>
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="-56.80000000000001" sy="135.0" tx="0.0" ty="-86.5">
+            <y:Point x="487.7" y="529.0"/>
+            <y:Point x="294.5" y="529.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="plain"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e3" source="n2" target="n6">
+      <data key="d8"/>
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="56.80000000000001" sy="135.0" tx="0.0" ty="-123.5">
+            <y:Point x="601.3" y="529.0"/>
+            <y:Point x="758.0" y="529.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="plain"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e4" source="n2" target="n7">
+      <data key="d8"/>
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="113.6" sy="135.0" tx="0.0" ty="-92.83333333333331">
+            <y:Point x="658.1" y="514.0"/>
+            <y:Point x="940.0" y="514.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="plain"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e5" source="n3" target="n1">
+      <data key="d8"/>
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="82.5" tx="87.0" ty="-71.0">
+            <y:Point x="544.5" y="765.0"/>
+            <y:Point x="506.5" y="765.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="plain"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e6" source="n5" target="n1">
+      <data key="d8"/>
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="86.5" tx="-87.0" ty="-71.0">
+            <y:Point x="294.5" y="769.0"/>
+            <y:Point x="332.5" y="769.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="plain"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e7" source="n2" target="n3">
+      <data key="d8"/>
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="135.0" tx="0.0" ty="-82.5"/>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="plain"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e8" source="n0" target="n2">
+      <data key="d8"/>
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="60.25" sy="99.5" tx="71.0" ty="-135.0">
+            <y:Point x="604.75" y="214.0"/>
+            <y:Point x="615.5" y="214.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="plain"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
