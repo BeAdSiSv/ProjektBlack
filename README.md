@@ -17,4 +17,3 @@ Team:	Adri  Tile_Sets, Texturen einlesen
 	Bene  Sound
     	Simon GUI
     	Sven  Map-Load
-
